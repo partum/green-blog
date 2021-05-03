@@ -1,7 +1,8 @@
 // sass input.scss output.css
 // sass --watch input.scss output.css
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
+$font-stack: "Rubik", sans-serif;
+$primary-color: #7eb09b;
+$secondary-color: #519e8a;
 
 body {
   font: 100% $font-stack;
