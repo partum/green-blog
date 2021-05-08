@@ -40,7 +40,6 @@ h1 {
   text-decoration: none;
   color: black;
 }
-
 .links a:hover {
   background-color: #7eb09b;
 }
@@ -66,6 +65,31 @@ h1 {
 
 #myBtn:hover {
   opacity: 1;
+}
+
+.first-section img {
+  height: 299px;
+  width: 645px;
+  display: inline;
+  float: left;
+  margin-right: 7px;
+}
+.first-section div {
+  height: 299px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+.first-section div time {
+  font-size: 18px;
+}
+.first-section div h2 {
+  font-size: 48px;
+  font-weight: normal;
+  margin: 7px 0;
+}
+.first-section div p {
+  font-size: 24px;
+  margin: 0px;
 }
 
 /*# sourceMappingURL=output.css.map */

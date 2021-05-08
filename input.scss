@@ -37,13 +37,16 @@ h1 {
   position: relative;
   top: -43px;
 }
-.links a {
-  text-decoration: none;
-  color: black;
+.links {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    background-color: $primary-color;
+  }
 }
-.links a:hover {
-  background-color: $primary-color;
-}
+
 #myBtn {
   display: none;
   position: fixed; /* Fixed/sticky position */
@@ -64,4 +67,30 @@ h1 {
 
 #myBtn:hover {
   opacity: 1;
+}
+.first-section {
+  img {
+    height: 299px;
+    width: 645px;
+    display: inline;
+    float: left;
+    margin-right: $small-desktop-space;
+  }
+  div {
+    height: 299px;
+    margin-bottom: $large-desktop-space;
+    overflow: hidden;
+    time {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 48px;
+      font-weight: normal;
+      margin: $small-desktop-space 0;
+    }
+    p {
+      font-size: 24px;
+      margin: 0px;
+    }
+  }
 }

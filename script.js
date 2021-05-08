@@ -17,3 +17,10 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// //adds highlight when moused over
+// links = document.getElementsByTagName("a");
+// for (const link of links) {
+//   link.addEventListener("onmouseover", highlight);
+// }
+// function highlight() {}
