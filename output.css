@@ -11,6 +11,8 @@
 
 body {
   font: 100% "Rubik", sans-serif;
+  margin: 0px;
+  margin-top: 7px;
 }
 
 h1 {
@@ -37,11 +39,12 @@ h1 {
   top: -43px;
 }
 
-.links a {
+a {
   text-decoration: none;
   color: black;
   margin-left: 7px;
 }
+
 .links a:hover {
   background-color: #7eb09b;
 }
@@ -69,6 +72,16 @@ h1 {
   opacity: 1;
 }
 
+section:hover {
+  cursor: pointer;
+}
+section:hover h2 {
+  color: #7eb09b;
+}
+
+.first-section {
+  margin-right: 0px;
+}
 .first-section img {
   height: 299px;
   width: 645px;
@@ -88,10 +101,12 @@ h1 {
   font-size: 48px;
   font-weight: normal;
   margin: 7px 0;
+  width: 581px;
 }
 .first-section div p {
   font-size: 24px;
   margin: 0px;
+  width: 581px;
 }
 
 .grid {
@@ -99,7 +114,7 @@ h1 {
   grid-template: auto auto/auto auto auto;
 }
 
-section div p, section div h2, section div time {
+section div p, section div time {
   margin-top: 7px;
   margin-bottom: 0px;
 }
@@ -118,7 +133,9 @@ section div time {
 section div h2 {
   font-size: 36px;
   text-transform: capitalize;
+  margin: 0px;
   width: 367px;
+  font-weight: normal;
 }
 section div p {
   font-size: 24px;
@@ -127,6 +144,16 @@ section div p {
 
 .flex-box:first-child {
   margin-right: 0;
+}
+
+footer {
+  background-color: #519e8a;
+  text-align: center;
+  grid-column: 1/-1 !important;
+  padding-top: 7px;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=output.css.map */

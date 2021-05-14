@@ -16,6 +16,8 @@ $large-desktop-space: 66px; /*was 50px*/
 }
 body {
   font: 100% $font-stack;
+  margin: 0px;
+  margin-top: $small-desktop-space;
 }
 h1 {
   font-size: 64px;
@@ -37,12 +39,12 @@ h1 {
   position: relative;
   top: -43px;
 }
+a {
+  text-decoration: none;
+  color: black;
+  margin-left: $small-desktop-space;
+}
 .links {
-  a {
-    text-decoration: none;
-    color: black;
-    margin-left: $small-desktop-space;
-  }
   a:hover {
     background-color: $primary-color;
   }
@@ -69,6 +71,12 @@ h1 {
 #myBtn:hover {
   opacity: 1;
 }
+section:hover {
+  cursor: pointer;
+  h2 {
+    color: $primary-color;
+  }
+}
 .first-section {
   img {
     height: 299px;
@@ -88,12 +96,15 @@ h1 {
       font-size: 48px;
       font-weight: normal;
       margin: $small-desktop-space 0;
+      width: 581px;
     }
     p {
       font-size: 24px;
       margin: 0px;
+      width: 581px;
     }
   }
+  margin-right: 0px;
 }
 .grid {
   display: grid;
@@ -115,8 +126,9 @@ section {
   div h2 {
     font-size: 36px;
     text-transform: capitalize;
-    @extend %small-vertical-spacing-dt;
+    margin: 0px;
     width: 367px;
+    font-weight: normal;
   }
   div p {
     font-size: 24px;
@@ -128,4 +140,13 @@ section {
 }
 .flex-box:first-child {
   margin-right: 0;
+}
+footer {
+  background-color: $secondary-color;
+  text-align: center;
+  grid-column: 1/-1 !important;
+  padding-top: $small-desktop-space;
+  a:hover {
+    text-decoration: underline;
+  }
 }
