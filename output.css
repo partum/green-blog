@@ -1,7 +1,8 @@
+/*was 50px*/
 .center-content {
   display: grid;
   grid-template-rows: min-content;
-  grid-template-columns: minmax(1rem, 1fr) minmax(0, 1440px) minmax(1rem, 1fr);
+  grid-template-columns: minmax(1rem, 1fr) minmax(0, 1233px) minmax(1rem, 1fr);
 }
 
 .center-content > * {
@@ -39,6 +40,7 @@ h1 {
 .links a {
   text-decoration: none;
   color: black;
+  margin-left: 7px;
 }
 .links a:hover {
   background-color: #7eb09b;
@@ -76,7 +78,7 @@ h1 {
 }
 .first-section div {
   height: 299px;
-  margin-bottom: 50px;
+  margin-bottom: 66px;
   overflow: hidden;
 }
 .first-section div time {
@@ -90,6 +92,41 @@ h1 {
 .first-section div p {
   font-size: 24px;
   margin: 0px;
+}
+
+.grid {
+  display: grid;
+  grid-template: auto auto/auto auto auto;
+}
+
+section div p, section div h2, section div time {
+  margin-top: 7px;
+  margin-bottom: 0px;
+}
+
+section {
+  margin-right: 66px;
+  margin-bottom: 66px;
+}
+section img {
+  height: 170px;
+  width: 367px;
+}
+section div time {
+  font-size: 18px;
+}
+section div h2 {
+  font-size: 36px;
+  text-transform: capitalize;
+  width: 367px;
+}
+section div p {
+  font-size: 24px;
+  width: 367px;
+}
+
+.flex-box:first-child {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=output.css.map */

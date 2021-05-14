@@ -4,12 +4,12 @@ $font-stack: "Rubik", sans-serif;
 $primary-color: #7eb09b;
 $secondary-color: #519e8a;
 $small-desktop-space: 7px;
-$large-desktop-space: 50px;
+$large-desktop-space: 66px; /*was 50px*/
 
 .center-content {
   display: grid;
   grid-template-rows: min-content;
-  grid-template-columns: minmax(1rem, 1fr) minmax(0, 1440px) minmax(1rem, 1fr);
+  grid-template-columns: minmax(1rem, 1fr) minmax(0, 1233px) minmax(1rem, 1fr);
 }
 .center-content > * {
   grid-column: 2;
@@ -41,6 +41,7 @@ h1 {
   a {
     text-decoration: none;
     color: black;
+    margin-left: $small-desktop-space;
   }
   a:hover {
     background-color: $primary-color;
@@ -93,4 +94,38 @@ h1 {
       margin: 0px;
     }
   }
+}
+.grid {
+  display: grid;
+  grid-template: auto auto / auto auto auto;
+}
+%small-vertical-spacing-dt {
+  margin-top: $small-desktop-space;
+  margin-bottom: 0px;
+}
+section {
+  img {
+    height: 170px;
+    width: 367px;
+  }
+  div time {
+    font-size: 18px;
+    @extend %small-vertical-spacing-dt;
+  }
+  div h2 {
+    font-size: 36px;
+    text-transform: capitalize;
+    @extend %small-vertical-spacing-dt;
+    width: 367px;
+  }
+  div p {
+    font-size: 24px;
+    @extend %small-vertical-spacing-dt;
+    width: 367px;
+  }
+  margin-right: $large-desktop-space;
+  margin-bottom: $large-desktop-space;
+}
+.flex-box:first-child {
+  margin-right: 0;
 }
