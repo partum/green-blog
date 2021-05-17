@@ -81,6 +81,8 @@ section:hover h2 {
 
 .first-section {
   margin-right: 0px;
+  margin-bottom: 33px;
+  height: 332px;
 }
 .first-section img {
   height: 299px;
@@ -120,8 +122,9 @@ section div p, section div time {
 }
 
 section {
-  margin-right: 66px;
-  margin-bottom: 66px;
+  margin-bottom: 33px;
+  border-bottom: 1px solid #519e8a;
+  height: 457px;
 }
 section img {
   height: 170px;
@@ -138,12 +141,18 @@ section div h2 {
   font-weight: normal;
 }
 section div p {
-  font-size: 24px;
+  font-size: 22px;
   width: 367px;
 }
 
 .flex-box:first-child {
   margin-right: 0;
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 footer {

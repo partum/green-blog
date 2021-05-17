@@ -105,6 +105,8 @@ section:hover {
     }
   }
   margin-right: 0px;
+  margin-bottom: $large-desktop-space/2;
+  height: 332px;
 }
 .grid {
   display: grid;
@@ -131,15 +133,22 @@ section {
     font-weight: normal;
   }
   div p {
-    font-size: 24px;
+    font-size: 22px;
     @extend %small-vertical-spacing-dt;
     width: 367px;
   }
-  margin-right: $large-desktop-space;
-  margin-bottom: $large-desktop-space;
+  // margin-right: $large-desktop-space;
+  margin-bottom: $large-desktop-space/2;
+  border-bottom: 1px solid $secondary-color;
+  height: 457px;
 }
 .flex-box:first-child {
   margin-right: 0;
+}
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 footer {
   background-color: $secondary-color;
