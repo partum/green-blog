@@ -101,7 +101,7 @@ section:hover {
     }
   }
   margin-right: 0px;
-  margin-bottom: $large-desktop-space;
+  margin-bottom: $large-desktop-space/2;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -158,24 +158,33 @@ footer {
     text-decoration: underline;
   }
 }
+
 @media only screen and (max-width: 765px) {
   h1 {
     font-size: 36px;
   }
   .first-section {
+    width: 367px;
+    margin: auto;
+    margin-bottom: 33px;
     img {
       height: 170px;
       width: 367px;
     }
     div {
+      overflow: visible;
+      width: 367px;
       time {
         font-size: 14px;
       }
       h2 {
         font-size: 24px;
+        margin: 0px;
       }
       p {
         font-size: 18px;
+        width: 367px;
+        margin-top: 7px;
       }
     }
   }

@@ -81,7 +81,7 @@ section:hover h2 {
 
 .first-section {
   margin-right: 0px;
-  margin-bottom: 66px;
+  margin-bottom: 33px;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -169,8 +169,17 @@ footer a:hover {
     font-size: 36px;
   }
 
+  .first-section {
+    width: 367px;
+    margin: auto;
+    margin-bottom: 33px;
+  }
   .first-section img {
     height: 170px;
+    width: 367px;
+  }
+  .first-section div {
+    overflow: visible;
     width: 367px;
   }
   .first-section div time {
@@ -178,9 +187,12 @@ footer a:hover {
   }
   .first-section div h2 {
     font-size: 24px;
+    margin: 0px;
   }
   .first-section div p {
     font-size: 18px;
+    width: 367px;
+    margin-top: 7px;
   }
 
   img {
