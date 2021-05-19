@@ -158,3 +158,42 @@ footer {
     text-decoration: underline;
   }
 }
+@media only screen and (max-width: 765px) {
+  h1 {
+    font-size: 36px;
+  }
+  .first-section {
+    img {
+      height: 170px;
+      width: 367px;
+    }
+    div {
+      time {
+        font-size: 14px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+  img {
+    height: 170px;
+    width: 367px;
+  }
+  section {
+    div {
+      time {
+        font-size: 14px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
