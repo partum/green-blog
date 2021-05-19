@@ -81,13 +81,9 @@ section:hover {
   img {
     height: 299px;
     width: 645px;
-    display: inline;
-    float: left;
     margin-right: $small-desktop-space;
   }
   div {
-    height: 299px;
-    margin-bottom: $large-desktop-space;
     overflow: hidden;
     time {
       font-size: 18px;
@@ -105,8 +101,12 @@ section:hover {
     }
   }
   margin-right: 0px;
-  margin-bottom: $large-desktop-space/2;
-  height: 332px;
+  margin-bottom: $large-desktop-space;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 3px;
 }
 .grid {
   display: grid;
@@ -140,7 +140,6 @@ section {
   // margin-right: $large-desktop-space;
   margin-bottom: $large-desktop-space/2;
   border-bottom: 1px solid $secondary-color;
-  height: 457px;
 }
 .flex-box:first-child {
   margin-right: 0;
@@ -148,7 +147,7 @@ section {
 .flex-box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 footer {
   background-color: $secondary-color;
