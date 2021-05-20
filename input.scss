@@ -17,7 +17,7 @@ $large-desktop-space: 66px; /*was 50px*/
 body {
   font: 100% $font-stack;
   margin: 0px;
-  margin-top: $small-desktop-space;
+  margin-top: 32px;
 }
 h1 {
   font-size: 64px;
@@ -46,7 +46,8 @@ a {
 }
 .links {
   a:hover {
-    background-color: $primary-color;
+    background-color: $secondary-color;
+    color: white;
   }
 }
 
@@ -160,8 +161,8 @@ footer {
 }
 
 @media only screen and (max-width: 765px) {
-  h1 {
-    font-size: 36px;
+  body {
+    margin-top: 17px;
   }
   .first-section {
     width: 367px;
@@ -172,7 +173,6 @@ footer {
       width: 367px;
     }
     div {
-      overflow: visible;
       width: 367px;
       time {
         font-size: 14px;
@@ -204,5 +204,22 @@ footer {
         font-size: 18px;
       }
     }
+  }
+  .header__logo {
+    height: 50px;
+    width: 50px;
+  }
+  .header__byline {
+    font-size: 18px;
+  }
+  h1 {
+    display: block;
+    margin-left: 0px;
+    font-size: 36px;
+  }
+  .links {
+    position: absolute;
+    top: 17px;
+    right: 17px;
   }
 }

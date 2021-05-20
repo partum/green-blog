@@ -12,7 +12,7 @@
 body {
   font: 100% "Rubik", sans-serif;
   margin: 0px;
-  margin-top: 7px;
+  margin-top: 32px;
 }
 
 h1 {
@@ -46,7 +46,8 @@ a {
 }
 
 .links a:hover {
-  background-color: #7eb09b;
+  background-color: #519e8a;
+  color: white;
 }
 
 #myBtn {
@@ -165,8 +166,8 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 765px) {
-  h1 {
-    font-size: 36px;
+  body {
+    margin-top: 17px;
   }
 
   .first-section {
@@ -179,7 +180,6 @@ footer a:hover {
     width: 367px;
   }
   .first-section div {
-    overflow: visible;
     width: 367px;
   }
   .first-section div time {
@@ -208,6 +208,27 @@ footer a:hover {
   }
   section div p {
     font-size: 18px;
+  }
+
+  .header__logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .header__byline {
+    font-size: 18px;
+  }
+
+  h1 {
+    display: block;
+    margin-left: 0px;
+    font-size: 36px;
+  }
+
+  .links {
+    position: absolute;
+    top: 17px;
+    right: 17px;
   }
 }
 
